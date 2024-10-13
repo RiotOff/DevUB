@@ -164,7 +164,7 @@ async def add_blacklist_command(_, message):
                     else:
                         with open("bldb.info", "a") as file:
                             file.write(str(user_id) + "\n")
-                        await message.edit("`Пользователь добавлен в чёрный список клиента SimpleUB.`")
+                        await message.edit("`Пользователь добавлен в чёрный список клиента DevUB.`")
                         blacklist.append(user_id)
             else:
                 await message.edit("`Пользователь уже находится в чёрном списке.`")
