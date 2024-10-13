@@ -8,7 +8,7 @@ with open("userbot.info", "r") as file:
 
 # Замените "example" на название вашего модуля
 def command_example(app):
-    @app.on_message(filters.command("hi", prefixes=prefix_userbot))
+    @app.on_message(filters.command("hi", prefixes="."))
     def example_module(client, message):
         message.edit("Привет!")
 
